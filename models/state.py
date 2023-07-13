@@ -4,7 +4,8 @@ from os import getenv
 from tokenize import String
 from models.base_model import Base, BaseModel
 from sqlalchemy import Column, String, ForeignKey
-from sqlalchemy.orm import declarative_base, relationship
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
 from models.city import City
 from sqlalchemy.orm import backref
 import models
